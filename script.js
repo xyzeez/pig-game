@@ -17,6 +17,7 @@ let score = [0, 0];
 let currentScore = 0;
 let activePlayer = 0;
 let playing = true;
+diceElement.classList.add('hidden');
 
 // Function to reset the game
 const initializeGame = () => {
@@ -55,7 +56,7 @@ btnRoll.addEventListener('click', () => {
 
     //   Display dice
     diceElement.classList.remove('hidden');
-    diceElement.src = `dice-${dice}.png`;
+    diceElement.src = `./assets/dice-${dice}.png`;
 
     //   Check for rolled 1:
     if (dice !== 1) {
